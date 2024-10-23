@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductListingPage</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">VENIA</div>
+        <div class="menu-items">
+            <div class="menu-item">Home</div>
+            <div class="menu-item">Women</div>
+            <div class="menu-item">Men</div>
+            <div class="menu-item">Smart Gear</div>
+            <div class="menu-item">Accessories</div>
+        </div>
+        <!-- <div class="cart-icon">🛒</div> -->
+        <div class="cart-icon">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="number">10</span>
+        </div>
+    </nav>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+        <div class="mobile-logo">VENIA</div>
+        <!-- <div class="cart-icon-mobile">🛒</div> -->
+        <div class="cart-icon-mobile">
+            <i class="fas fa-shopping-bag"></i>
+            <span class="number">10</span>
+        </div>
+        <div class="mobile-items">
+            <div class="mobile-item">Home</div>
+            <div class="mobile-item">Women</div>
+            <div class="mobile-item">Men</div>
+            <div class="mobile-item">Smart Gear</div>
+            <div class="mobile-item">Accessories</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section section1">
+            <p>Section 1</p>
+        </div>
+        <div class="section section2"></div>
+    </div>
+
+    <!-- ====================== -->
+    
+    <section class="content-section">
+        <div class="above-filters">
+            <p>Path/path</p> <!-- Add your text here -->
+        </div>
+        
+        
+        <div class="filters">
+            <h3 onclick="toggleCategories()" class="filters-label">Filters</h3> <!-- Clickable in mobile -->
+            <hr class="hr-first">
+            <div class="filter-categories">
+                <h4>Categories</h4>
+                <label><input type="checkbox" value="jewelery"> Jewellery</label>
+                <label><input type="checkbox" value="electronics"> Electronics</label>
+                <label><input type="checkbox" value="men's clothing"> Men's Clothing</label>
+                <label><input type="checkbox" value="women's clothing"> Women's Clothing</label>
+                <hr class="hr-second">
+            </div>
+        </div>
+      
+        <!-- Products Section -->
+        <div class="products">
+            <div class="products-header">
+                <span>Results</span>
+                <select id="sortPrice" onchange="sortProducts()" class="form-control">
+                    <option value="default">Sort by Price</option>
+                    <option value="asc">Price: Low to High</option>
+                    <option value="desc">Price: High to Low</option>
+                </select>
+            </div>
+      
+            <div id="loader" class="loader" style="display: none;">Loading...</div>
+            <div class="product-grid" id="productGrid">
+                <!-- Products are inserted here dynamically using JavaScript -->
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
