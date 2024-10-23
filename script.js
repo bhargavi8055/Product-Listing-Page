@@ -93,3 +93,12 @@ document.querySelectorAll('.filter-categories input[type="checkbox"]').forEach(c
 
 // Initial fetch and display
 fetchProducts();
+
+let searchProducts=()=>{
+    let searchInput=document.getElementById("searchInput").value.toLowerCase();
+    let filteredProducts=allProducts;
+    if(searchInput){
+        filteredProducts=allProducts.filter(product=>product.title.toLowerCase().includes(searchInput));
+    }
+    displayProducts(filteredProducts);
+};
