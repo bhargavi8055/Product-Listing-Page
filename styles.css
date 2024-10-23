@@ -166,6 +166,11 @@ margin-top: 25px;
   font-size: 1.5rem;
   color: #333; /* Loader text color */
 }
+.searchbar{
+  
+  border: 1px solid #d3d3d3;
+  width: -webkit-fill-available;
+}
 /* Mobile Styles */
 @media (max-width: 768px) {
   .hr-second,.hr-first{
@@ -282,14 +287,13 @@ margin-top: 25px;
   .product-grid {
     grid-template-columns: 1fr; 
 }
+
 }
 .form-control{
   display: block;
-  height: calc(2em + .75rem + 2px);
   padding: .375rem .75rem;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 2.5;
   padding-top: -3px;
   padding-bottom:4px;
   margin-bottom:4px;
