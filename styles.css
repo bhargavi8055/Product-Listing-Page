@@ -86,7 +86,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+.section1>p{
+  text-align: center;
+  font-size: 30px;
+  border-bottom: 5px solid blue;
+  padding-bottom: 5px;
+}
 .section2 {
   width: 75%; 
   background-image: url('download.jpg'); 
@@ -240,7 +245,7 @@ margin-top: 25px;
 
 .section1 {
     position: absolute;
-    top: 98%; 
+    top: 90%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
     z-index: 1;
@@ -249,7 +254,7 @@ margin-top: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75%; 
+    width: 90%; 
     height: auto; 
     padding: 20px; 
     box-sizing: border-box; 
