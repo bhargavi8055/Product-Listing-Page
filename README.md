@@ -1,6 +1,6 @@
 Link to the page:
 
-**https://rawcdn.githack.com/bhargavi8055/Product-Listing-Page/05ff1e1569f862ae473ed739b203ae67101ffa68/index.html**
+**https://rawcdn.githack.com/bhargavi8055/Product-Listing-Page/367af31bb077b6662298172e6256cddfdb82f061/index.html**
 
 
 Built a Webpage using the Tech Stack :html,css, Javascript and ES6.
